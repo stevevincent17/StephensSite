@@ -15,51 +15,18 @@
     <link rel="stylesheet" href="CSS/normalize.css" />
   </head>
   <body>
-    <svg display="none">
-      <defs>
-        <g id="menu">
-          <path
-            xmlns="http://www.w3.org/2000/svg"
-            d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z"
-          />
-          <path
-            xmlns="http://www.w3.org/2000/svg"
-            d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"
-          />
-          <path
-            xmlns="http://www.w3.org/2000/svg"
-            d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"
-          />
-          <path
-            xmlns="http://www.w3.org/2000/svg"
-            d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z"
-          />
-        </g>
-      </defs>
-    </svg>
-
-    <nav class="nav collapsible">
-      <a class="nav__brand" href="/"
-        ><img src="images/logo.svg" alt="Company Logo"
-      /></a>
-
-      <svg
-        class="icon icon--white nav__toggler"
-        viewbox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        preserve_aspect_ratio="xMinYMin"
-      >
-        <use xlink:href="#menu"></use>
-      </svg>
-
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#">Hosting</a></li>
-        <li class="nav__item"><a href="#">VPS</a></li>
-        <li class="nav__item"><a href="#">Domain</a></li>
-        <li class="nav__item"><a href="#">Pricing</a></li>
-      </ul>
-    </nav>
+    <section class="block block--dark block--skewed--left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Cloud Hosting For Pros</h1>
+          <p class="hero__tagline">
+            Deploy you website in less than 60 seconds.
+          </p>
+          <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+        <img class="hero__image" src="images/banner.png" alt="" />
+      </div>
+    </section>
 
     <script src="js/main.js"></script>
   </body>
