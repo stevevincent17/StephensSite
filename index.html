@@ -15,53 +15,170 @@
     <link rel="stylesheet" href="CSS/normalize.css" />
   </head>
   <body>
-    <section class="block">
-      <header class="block__header">
-        <h2>What Our Customers Are Saying</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-          deleniti!
-        </p>
-      </header>
-      <div class="container">
-        <div class="card testimonial">
-          <div class="grid grid--1x2">
-            <div class="testimonial__image">
-              <img
-                src="images/testimonial.jpg"
-                alt="A happy, smiling customer."
-              />
-              <span class="icon-container icon-container--accent">
-                <svg class="icon icon--small icon--white">
-                  <use xlink:href="images/sprite.svg#quotes"></use>
-                </svg>
-              </span>
-            </div>
-            <blockquote class="quote">
-              <p class="quote__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-                error architecto iure natus tempora tenetur placeat
-                reprehenderit fugit corporis eligendi itaque illum voluptatem,
-                repellat hic dicta ab doloremque delectus nesciunt?
-              </p>
-              <footer>
-                <div class="media">
-                  <div class="media__image">
-                    <svg class="icon icon--primary quote__line">
-                      <use xlink:href="images/sprite.svg#line"></use>
-                    </svg>
-                  </div>
-                  <div class="media__body">
-                    <h3 class="media__title quote__author">Stephen Vincent</h3>
-                    <p class="quote__organization">Stephen Vincent inc.</p>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
+    <svg display="none">
+      <defs>
+        <g id="chevron">
+          <circle
+            xmlns="http://www.w3.org/2000/svg"
+            cx="25.5"
+            cy="25.5"
+            r="25.5"
+            fill="#393939"
+          />
+          <rect
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.6"
+            height="15.24"
+            x="24.4"
+            y="27.9"
+            fill="#fff"
+            rx=".8"
+            transform="rotate(-39 11.114 37.674)"
+          />
+          <rect
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.6"
+            height="15.24"
+            x="33.3"
+            y="27.9"
+            fill="#fff"
+            rx=".8"
+            transform="rotate(37.3 44.444 24.605)"
+          />
+        </g>
+      </defs>
+    </svg>
+
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <!-- Collapsible Section 1 -->
+
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
+
+            <svg
+              class="icon icon--white collapsible__chevron"
+              width="51"
+              height="51"
+              viewBox="0 0 51 51"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              preserveAspectRatio="xMinYMin"
+            >
+              <use xlink:href="#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Wordpress Hosting</a></li>
+              <li><a href="#">Free Automated Hosting</a></li>
+              <li><a href="#">Migrations</a></li>
+              <li><a href="#">Domain Names</a></li>
+              <li><a href="#">Monthly Web Hosting</a></li>
+            </ul>
           </div>
-        </div>
+        </section>
+
+        <!-- Collapsible Section 2 -->
+
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Company</h2>
+
+            <svg
+              class="icon icon--white collapsible__chevron"
+              width="51"
+              height="51"
+              viewBox="0 0 51 51"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              preserveAspectRatio="xMinYMin"
+            >
+              <use xlink:href="#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Affilliates</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Green Hosting</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Collapsible Section 3 -->
+
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Support</h2>
+
+            <svg
+              class="icon icon--white collapsible__chevron"
+              width="51"
+              height="51"
+              viewBox="0 0 51 51"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              preserveAspectRatio="xMinYMin"
+            >
+              <use xlink:href="#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Knowledge Base</a></li>
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">System Status</a></li>
+              <li><a href="#">Web Hosting</a></li>
+              <li><a href="#">DreamCompute</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Collapsible Section 4 -->
+
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Domains</h2>
+
+            <svg
+              class="icon icon--white collapsible__chevron"
+              width="51"
+              height="51"
+              viewBox="0 0 51 51"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              preserveAspectRatio="xMinYMin"
+            >
+              <use xlink:href="#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Domain Checker</a></li>
+              <li><a href="#">Domain Transfer</a></li>
+              <li><a href="#">Free Domains</a></li>
+              <li><a href="#">XYZ Domains</a></li>
+              <li><a href="#">Cheap SSL Certificate</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Logo -->
+
+        <section class="footer__brand">
+          <img src="images/logo.svg" alt="Logo Image" />
+          <p class="footer__copyright">Copyright 2020 Mosh Hamedani</p>
+        </section>
       </div>
-    </section>
+    </footer>
+
     <script src="js/main.js"></script>
   </body>
 </html>
